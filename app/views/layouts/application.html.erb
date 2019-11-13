@@ -10,6 +10,48 @@
   </head>
 
   <body>
+    <header class="row">
+      <div class="col-3">
+        <div class="circle">
+        <br />
+      Supplements 
+      <br />
+      Tips
+      <br />
+      Videos
+      </div>
+      </div>
+      <div class="col-4 slogan">
+        Bodybuilding since 1734
+      </div>
+       <div class="col-5 links">
+        <%= link_to 'Contribute', '#' %>
+        <%= link_to 'About', '#' %>
+      </div>
+    </header>
+
+    <hr />
+
+    <br class="clear" />
+
+      <div class="container">
     <%= yield %>
+     </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+       <%= link_to "This isn't enough, I need more", "#", class: 'next-quote' %>
+      </div>
+      <div class="col-6 footer-blurb">
+        Sponsored by <a href="[www.bodybuilding.com]">[Kevin Wu]</a><br />
+        Want to recieve personal training - <a href="https://www.facebook.com">Learn how to get big here</a>
+      </div>
+        </div>
+      </div>
+    </div>
+  
+
   </body>
 </html>
